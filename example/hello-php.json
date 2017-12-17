@@ -1,0 +1,39 @@
+{
+  "name": "hello-php",
+  "execution": {
+    "type": "php",
+    "handler": "Shift\\Example\\HelloHandler::helloPhpFunction"
+  },
+  "config": {
+    "type": "object",
+    "required": [ "color" ],
+    "properties": {
+      "color": {
+        "type": "string",
+        "description": "Color of the output"
+      },
+      "db_url": {
+        "type": "string"
+      }
+    }
+  },
+  "input": {
+    "type": "object",
+    "required": [ "greeting" ],
+    "properties": {
+      "greeting": {
+        "type": "string",
+        "description": "Type of greeting"
+      }
+    }
+  },
+  "output": {
+    "type": "object",
+    "required": [ "text" ],
+    "properties": {
+      "text": {
+        "type": "string"
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "hello-service",
+  "functions": [
+    {
+      "include": "hello-php.json"
+    },
+    {
+      "include": "hello-exec.json"
+    }
+  ]
+}

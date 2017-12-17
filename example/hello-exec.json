@@ -1,0 +1,21 @@
+{
+  "name": "hello-exec",
+  "execution": {
+    "type": "exec",
+    "template": "echo \"{$input.greeting}, {$context.username}\""
+  },
+  "input": {
+    "type": "object",
+    "required": [ "greeting" ],
+    "properties": {
+      "greeting": {
+        "type": "string",
+        "description": "Type of greeting"
+      }
+    }
+  },
+  "__output": {
+    "type": "string",
+    "description": "The greeting"
+  }
+}
