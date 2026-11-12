@@ -20,7 +20,8 @@
   },
   "require-dev": {
     "symfony/dotenv": "~3.0",
-    "symfony/console": "~3.0"
+    "symfony/console": "~3.0",
+    "phpunit/phpunit": "^9.6"
   },
   "autoload": {
     "psr-4": {
